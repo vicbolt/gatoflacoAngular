@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './menunav.component.scss'
 })
 export class MenunavComponent {
+  menuOpen = false;
 
+  toggleMenu() {
+      this.menuOpen = !this.menuOpen;
+  }
 }

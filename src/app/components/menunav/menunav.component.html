@@ -14,8 +14,21 @@
                 <a class="btn-2 main" href="tel:637054718"> 
                     <img src="../../../assets/icons/phone.png" style="width: 20px; margin-right: 10px;" alt="Teléfono"> Reservar
                 </a>
-
             </div>
+
+            <nav class="burgernav">
+                    <div class="menu-icon" (click)="toggleMenu()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul [class.show]="menuOpen" class="nav-links">
+                        <li><a routerLink="/">Inicio</a></li>
+                        <li><a routerLink="/about">Sobre nosotros</a></li>
+                        <li><a routerLink="/menu">Carta</a></li>
+                        <li><a routerLink="/contact">Contacto</a></li>
+                    </ul>
+            </nav>
         </div>
     </div>
 </section>

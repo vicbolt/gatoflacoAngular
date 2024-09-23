@@ -35,7 +35,7 @@ import { RestauranteComponent } from './pages/restaurante/restaurante.component'
     CartaComponent,
     AboutComponent,
     ContactComponent,
-    RestauranteComponent
+    RestauranteComponent,
   ],
   imports: [
     BrowserModule,

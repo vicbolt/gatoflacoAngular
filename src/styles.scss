@@ -288,7 +288,7 @@ p {
   transition: background-color 0.5s ease;
 
   &.main{
-    background-color: $color-3;
+    background: linear-gradient(45deg, #79249f, $color-5);
     color: white !important;
     border: 2px solid white;
 

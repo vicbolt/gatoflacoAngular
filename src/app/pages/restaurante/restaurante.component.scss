@@ -1,0 +1,34 @@
+@import '../../../styles.scss';
+.restaurante_page{
+    padding: 50px 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 950px) {
+            flex-direction: column;
+            }
+        
+        .right{
+            width: 47%;
+            margin-top: 30px;
+
+            @media (max-width: 950px) {
+                width: 100%;
+                }
+            img{
+                width: 100%;
+                border-radius: 90px 15px 90px 15px;
+                border-right: 5px solid $color-6;
+                border-bottom: 5px solid $color-6;
+            }
+        }
+        
+        .left{
+            width: 47%;
+            @media (max-width: 950px) {
+                width: 100%;
+                }
+        }
+    }
+}

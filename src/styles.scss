@@ -1,1 +1,351 @@
 /* You can add global styles to this file, and also import other style files */
+// RESET________________________________________________________________________
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: unset;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+  
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+.wrap {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 1300px) {
+    width: 85%; // Ajuste para pantallas más pequeñas
+  }
+
+  @media (max-width: 500px) {
+    width: 90%; // Ajuste para pantallas más pequeñas
+  }
+}
+
+@font-face {
+  font-family: 'LazyDog';
+  src: url('assets/fonts/lazy_dog.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VAL';
+  src: url('assets/fonts/VAL.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Shaabyla';
+  src: url('assets/fonts/Shaabyla.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'April';
+src: url('assets/fonts/April.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+$color-1: #78249f;
+$color-1-opa50: rgba(120, 36, 159, 0.5);
+$color-1-opa25: rgba(120, 36, 159, 0.25);
+$color-1-opa15: rgba(120, 36, 159, 0.15);
+
+$color-2: #f9a72b;
+$color-2-opa50: rgb(249, 167, 43, 0.5);
+$color-2-opa25: rgb(249, 167, 43, 0.25);
+$color-2-opa15: rgb(249, 167, 43, 0.15);
+
+$color-3: #450753;
+$color-3-opa50: rgba(69, 7, 83, 0.5);
+$color-3-opa25: rgba(69, 7, 83, 0.25);
+$color-3-opa15: rgba(69, 7, 83, 0.15);
+
+
+$color-4: #ffc513;
+$color-4-opa50: rgb(255, 197, 19, 0.5);
+$color-4-opa25: rgb(255, 197, 19, 0.25);
+$color-4-opa15: rgb(255, 197, 19, 0.15);
+
+$color-5: #ff67b7;
+$color-5-opa50: rgb(255, 103, 183, 0.5);
+$color-5-opa25: rgb(255, 103, 183, 0.25);
+$color-5-opa15: rgb(255, 103, 183, 0.15);
+
+
+$color-6: rgb(95, 189, 240);
+$color-6-opa50: rgb(95, 189, 240, 0.5);
+$color-6-opa25: rgb(95, 189, 240, 0.25);
+$color-6-opa15: rgb(95, 189, 240, 0.15);
+
+$ff-title: "Shaabyla", sans-serif;
+$ff-text: "April", sans-serif;
+$ff-big: "VAL", sans-serif;
+
+$br: 15px;
+$bs-pink: 4px 5px 17px $color-2-opa15;
+$bs-green: 4px 5px 17px $color-3-opa15;
+
+$gradient-pink: linear-gradient(0deg, $color-1-opa15, white);
+$gradient-green: linear-gradient(0deg, $color-3-opa15, white);
+
+
+
+body{
+  font-family: $ff-text, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-4;
+  background: url('./assets/backgrounds/fondo_gatos.png'), radial-gradient(white, #FFF7E3);
+  background-size: cover;
+  overflow-x: hidden !important;
+}
+
+section{
+
+  &.aboutus_inicio, &.map, &.menu_inicio, &.testimonys{
+    margin-top: 100px;
+  }
+}
+
+a{
+    color: $color-4;
+    margin-bottom: 0;
+}
+
+h1{
+    font-family: $ff-title !important;
+    font-size: 100px;
+    color: white;
+    text-shadow: 5px 1px 0 $color-1;
+}
+
+h3{
+  font-family: $ff-title !important;
+  font-size: 40px;
+  color: $color-1;
+  margin-bottom: 15px;
+
+}
+
+h4 {
+  text-align: start;
+  font-size: 16px;
+  font-weight: 600;
+  color: $color-4;
+  margin-bottom: 6px;
+}
+
+p {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.5rem;
+  color: $color-3-opa50;
+  margin-bottom: 10px;
+
+  &.caption{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+  }
+}
+
+
+.btn-1{
+  min-width: 150px;
+  padding: .6rem .5rem;
+  border-radius: $br;
+  font-size: 12px !important;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+
+  &.main{
+    background-color: $color-3;
+    color: white !important;
+    border: 2px solid white;
+
+    &:hover{
+      background-color: white;
+      color: $color-3 !important;
+    border: 2px solid $color-3;
+
+    }
+  }
+
+  &.second{
+    background-color: $color-5;
+    color: white !important;
+    &:hover{
+      background-color: $color-5-opa50;
+      color: $color-5 !important;
+      border: 2px solid $color-5;
+    }
+  }
+}
+
+.btn-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  background-color: white;
+  color: $color-1 !important;
+  padding: .6rem .5rem;
+  border-radius: $br;
+  font-size: 12px !important;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+
+
+  &.main{
+    color: $color-2;
+    border: 2px solid $color-2;
+
+    &:hover{
+      background-color: $color-4;
+      color: black !important;
+    }
+  }
+
+  &.second{
+    color: $color-5 !important;
+    border: 2px solid $color-3;
+
+    &:hover{
+      background-color: $color-4;
+      color: white !important;
+    }
+  }
+
+
+}
+

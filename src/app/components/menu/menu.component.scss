@@ -1,0 +1,265 @@
+@import "../../../styles.scss";
+
+.carta_page {
+  background: url("../../../assets/backgrounds/fondo_gatos.png"),
+    radial-gradient($color-5, $color-3);
+  position: relative;
+  background-size: contain;
+
+  div.line1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .container {
+    padding-top: 50px;
+
+    @media (max-width: 950px) {
+      padding-top: 0;
+      }
+
+    .menu-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+
+      align-items: center;
+      padding: 20px;
+
+      @media (max-width: 950px) {
+        h1{
+          font-size: 70px !important;
+        }
+        }
+
+      .desayunos_bebida {
+        position: relative;
+        width: 40%;
+        padding: 20px 30px;
+        background-color: #fff7e3;
+        border-radius: $br;
+        border-right: 5px solid $color-6;
+        border-bottom: 5px solid $color-6;
+        margin-bottom: 50px;
+
+        @media (max-width: 950px) {
+          width: 100%;
+          }
+
+        img {
+          width: 30%;
+          position: absolute;
+          top: 10px;
+          right: -178px;
+        }
+
+
+        h3 {
+          color: $color-3;
+          font-size: 25px;
+        }
+
+        p,
+        span {
+          color: $color-5;
+        }
+
+        .item {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .platos-container {
+        width: 100%;
+      }
+
+      .category-buttons {
+        width: 100%;
+        margin: auto;
+        border-radius: $br;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 950px) {
+          flex-wrap: wrap;
+          }
+
+        .btn-category{
+          font-family: $ff-text !important;
+
+          @media (max-width: 950px) {
+            width: 49%;
+            margin-bottom: 5px;
+            }
+        }
+
+        h1{
+          font-family: $ff-big;
+        }
+
+        button {
+          color: $color-3;
+          appearance: none;
+          padding: 10px 5px;
+          border: none;
+          width: 12%;
+          border-radius: $br;
+          border-right: 3px solid $color-2;
+          border-bottom: 3px solid $color-2;
+          cursor: pointer;
+
+          &.active {
+            background-color: $color-4; 
+            color: white;
+          }
+        }
+      }
+
+      h2 {
+        margin-top: 50px;
+      }
+
+      .menu-categories {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        button {
+          padding: 10px 20px;
+          background-color: #333;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #555;
+          }
+
+          &:focus {
+            outline: none;
+            background-color: #777;
+          }
+        }
+      }
+
+      .platos-lista {
+        opacity: 1 !important;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+
+        h3 {
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+
+        p {
+          font-size: 14px;
+          color: #666;
+        }
+      }
+    }
+
+    .card {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 35px;
+
+      @media (max-width: 950px) {
+        flex-direction: column-reverse;
+        }
+
+      &.reverse {
+        flex-direction: row-reverse;
+
+        @media (max-width: 950px) {
+          flex-direction: column-reverse;
+          }
+      }
+
+      .left {
+        width: 47%;
+
+        @media (max-width: 950px) {
+          flex-direction: column;
+          width: 100% !important;
+          }
+
+        p.recomendacion {
+          color: $color-5;
+          font-family: $ff-title;
+          font-size: 24px;
+        }
+
+        p {
+          color: $color-4;
+        }
+
+        .price {
+          padding: 10px 15px;
+          border-radius: $br;
+          border-right: 3px solid $color-5;
+          border-bottom: 3px solid $color-5;
+          background-color: $color-3;
+          width: fit-content;
+          color: $color-4;
+          font-size: 25px;
+          font-weight: 600;
+          font-family: $ff-title;
+
+          span {
+            font-size: 17px;
+          }
+        }
+      }
+
+      .right {
+        width: 47%;
+        @media (max-width: 950px) {
+          width: 100%;
+          }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    p.info {
+      text-align: center;
+      width: 100%;
+      font-family: $ff-title;
+      font-size: 26px;
+      color: $color-5;
+
+      &2 {
+        color: $color-4;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 50px;
+    font-family: $ff-title;
+    color: white;
+    padding: 20px 10px;
+    background-color: $color-5;
+    border-right: 3px solid $color-4;
+    border-bottom: 3px solid $color-4;
+    border-radius: $br;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  p {
+    color: $color-4;
+  }
+}

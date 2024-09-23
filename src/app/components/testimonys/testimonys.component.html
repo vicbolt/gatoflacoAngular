@@ -1,0 +1,25 @@
+<section class="testimonys">
+    <div class="wrap">
+        <h3>Opiniones de nuestros clientes</h3>
+
+        <div class="review-slider">
+            <div *ngFor="let review of reviews" class="review-card">
+                <div class="container_header">
+                    <div class="container_icon"></div>
+                    <div class="container_name">
+                        <p>{{ review.name }}</p>
+                        <p class="caption">Reseña de Google</p>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                    <p class="caption" style="margin-bottom: 0; margin-right: 15px;">5/5</p>
+                    <img src="../../../assets/icons/Stars.svg" style="width: 30%;" alt="5 estrellas">
+                </div>
+
+                <h5>{{ review.title }}</h5>
+                <p>{{ review.text }}</p>
+            </div>
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,45 @@
+@import '../../../styles.scss';
+
+.menu_nav{
+    background-color: $color-1;
+    height: 80px;
+
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        .left{
+            width: 20%;
+            height: 100%;
+            
+
+            .img{
+                height: 100%;
+                background-image: url('../../../assets/logos/logo_color.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+        }
+
+        .right{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (max-width: 950px) {
+                display: none;
+              }
+
+            a{
+                font-size: 13px;
+            }
+        }
+
+    }
+
+}

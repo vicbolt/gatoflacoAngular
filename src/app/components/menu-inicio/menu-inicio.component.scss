@@ -1,0 +1,69 @@
+@import '../../../styles.scss';
+.menu_inicio{
+    display: flex;
+    background: url('../../../assets/pics/burger-menu2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 600px;
+    overflow-x: hidden;
+
+    @media (max-width: 1000px) {
+        background: unset;
+        text-align: center;
+      }
+
+
+    .container{
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+            height: auto;
+          }
+
+        .left{
+            width: 60%;
+
+            @media (max-width: 1000px) {
+                width: 100%;
+              }
+        }
+
+        .right{
+            width: 40%;
+            height: 100%;
+
+            & img{
+                display: none;
+            }
+
+            @media (max-width: 1000px) {
+                width: 100%;
+                margin-top: 30px;
+        overflow-x: hidden;
+
+
+                & img{
+                    display: flex;
+                    width: 100%;
+                    // margin-left: 60px;
+                }
+              }
+
+              @media (max-width: 500px) {
+                width: 100%;
+                margin-top: 30px;
+
+                & img{
+                    display: flex;
+                    width: 130%;
+                    margin-left: -75px;
+                }
+              }
+        }
+    }
+}

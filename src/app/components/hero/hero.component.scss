@@ -1,0 +1,103 @@
+@import "../../../styles.scss";
+.hero {
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 15, 18, 0.8562018557) 18%,
+      rgba(0, 212, 255, 0) 30%
+    ),
+    url("../../../assets/backgrounds/mural.png");
+  background-repeat: no-repeat;
+  background-position: 13% 31%;
+  background-size: 291%;
+
+  @media (max-width: 950px) {
+    height: 480px; 
+
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 15, 18, 0.8562018557) 37%,
+    rgba(0, 212, 255, 0) 65%), 
+    url("../../../assets/backgrounds/mural.png");
+    background-size: cover;
+    background-position: 5%;
+    ;
+  }
+
+  @media (max-width: 500px) {
+
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 15, 18, 0.386) 80%,
+    rgba(0, 212, 255, 0) 100%), 
+    url("../../../assets/backgrounds/mural.png");
+    background-size: cover;
+    background-position: 5%;
+    ;
+  }
+
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+
+    h1 {
+      margin-bottom: 20px;
+      line-height: 65px;
+      @media (max-width: 500px) {
+        width: 100%;
+        font-size: 75px;
+      line-height: 60px;
+      text-align: center;
+
+      }
+    }
+    h2 {
+      width: 100%;
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 30px;
+      color: white;
+      line-height: 35px;
+
+      @media (max-width: 500px) {
+      line-height: 25px;
+      font-size: 15px;
+      text-align: center;
+
+      }
+    }
+
+    .container-btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        }
+
+      .btn-1 {
+        margin-right: 20px;
+
+        @media (max-width: 500px) {
+          margin-right: 0;
+          margin-bottom: 10px;
+    
+          }
+      }
+    }
+  }
+}

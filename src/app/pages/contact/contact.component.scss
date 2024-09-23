@@ -1,0 +1,52 @@
+@import '../../../styles.scss';
+
+.contacto_page{
+    .container{
+        padding: 30px 50px;
+        margin: 30px 0px;
+        background-color: $color-2;
+        border-radius: $br;
+        border-right: 5px solid $color-6;
+        border-bottom: 5px solid $color-6;
+
+
+
+
+        .full_container{
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: 950px) {
+                flex-direction: column;
+                }
+            .info{
+                @media (max-width: 950px) {
+                    width: 100%;
+                    }
+                width: 47%;
+                display: flex;
+                flex-direction: column;
+    
+                a{
+                    color: white;
+                    margin-bottom: 10px;
+                }
+            }
+    
+            .img{
+                @media (max-width: 950px) {
+                    width: 100%;
+                    justify-content: center;
+                    margin-top: 30px;
+                    }
+                width: 47%;
+                display: flex;
+                justify-content: end;
+                img{
+                    width: 40%;
+                }
+            }
+        }
+
+    }
+}

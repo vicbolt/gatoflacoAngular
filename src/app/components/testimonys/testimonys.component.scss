@@ -1,0 +1,100 @@
+@import '../../../styles.scss';
+
+.testimonys {
+  @media (max-width: 1000px) {
+    text-align: center;
+  }
+  .review-slider {
+    margin: 40px auto;
+
+    .slick-slide {
+      display: flex;
+      align-items: stretch;
+      padding: 18px 24px;
+    }
+
+    .slick-dots {
+      bottom: -30px; // Ajusta la posición de los puntos si es necesario
+    }
+
+    // Estilos de los botones de navegación (anterior y siguiente)
+    .slick-prev,
+    .slick-next {
+      width: 40px; /* Ajusta el tamaño del botón */
+      height: 40px;
+      background-color: #6a0dad !important; /* Color de fondo morado */
+      border-radius: 50%; /* Hace los botones circulares */
+      z-index: 1; /* Asegura que las flechas estén visibles sobre otros elementos */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+    }
+
+    // Sobrescribe los estilos del :before para las flechas
+    .slick-prev:before,
+    .slick-next:before {
+      content: ''; /* Añadir contenido vacío, opcional */
+      font-size: 20px;
+      color: #fff !important; /* Icono en blanco */
+      opacity: 1 !important; /* Asegura que la opacidad sea 1 */
+    }
+
+    // Estilos de hover para las flechas
+    .slick-prev:hover,
+    .slick-next:hover {
+      background-color: #7a0dd9 !important; /* Cambia a un morado más claro al hacer hover */
+      color: #fff !important;
+    }
+  }
+
+  .review-card {
+    min-height: 400px;
+    background: #fff;
+    border-radius: $br;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+    text-align: center;
+    margin: 0 8px;
+    margin-bottom: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    h5{
+        color: $color-3;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 11px;
+      line-height: 20px;
+    }
+  }
+
+  .container_header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .container_name {
+      p {
+        margin-bottom: 0;
+        margin-left: 10px;
+      }
+    }
+
+    .container_icon {
+      width: 35px;
+      height: 35px;
+      background-image: url("../../../assets/icons/google.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

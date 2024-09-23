@@ -1,0 +1,26 @@
+@import '../../../styles.scss';
+
+.map{
+    position: relative;
+    #map {
+    height: 400px;
+    width: 100%;
+  }
+  
+  .directions-btn {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    padding: 8px 16px;
+    background-color: $color-3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .directions-btn:hover {
+    background-color: $color-2;
+  }
+}

@@ -1,0 +1,105 @@
+<section class="carta_page">
+  <div class="wrap">
+    <div class="container">
+      <div class="menu-container">
+        <!-- Botones para filtrar por categoría -->
+        <div class="category-buttons">
+          <button class="btn-category" (click)="filterCategory('desayunos')" [ngClass]="{'active': selectedCategory === 'desayunos'}"
+          >Desayunos</button>
+          <button class="btn-category" (click)="filterCategory('completo')" [ngClass]="{'active': selectedCategory === 'completo'}" >Carta</button>
+          <button class="btn-category" (click)="filterCategory('entrantes')" [ngClass]="{'active': selectedCategory === 'entrantes'}">Entrantes</button>
+          <button class="btn-category" (click)="filterCategory('principales')" [ngClass]="{'active': selectedCategory === 'principales'}">Principales</button>
+          <button class="btn-category" (click)="filterCategory('hamburguesas')" [ngClass]="{'active': selectedCategory === 'hamburguesas'}">Burgers</button>
+          <button class="btn-category" (click)="filterCategory('pizzas')" [ngClass]="{'active': selectedCategory === 'pizzas'}">Pizzas</button>
+          <button class="btn-category" (click)="filterCategory('postres')" [ngClass]="{'active': selectedCategory === 'postres'}">Postres</button>
+          <button class="btn-category" (click)="filterCategory('bebidas')" [ngClass]="{'active': selectedCategory === 'bebidas'}">Bebidas</button>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 50px; margin-top: 40px">
+          <h1>{{ pageTitle }}</h1>
+          <h3 *ngIf="selectedCategory === 'desayunos'" style="font-size: 30px">
+            *Los desayunos incluyen cafe o caña. Suplemento de 1€ para refrescos
+          </h3>
+        </div>
+
+        <div *ngIf="selectedCategory === 'desayunos'" class="desayunos_bebida">
+          <img src="../../../assets/icons/neon_bebidas.png" alt="Dos bebidas rosas con neon">
+          <div class="item">
+            <h3>Cafe</h3>
+            <p class="price">1,5<span>€</span></p>
+          </div>
+
+          <div class="item">
+            <h3>Chocolate a la Taza</h3>
+            <p class="price">1,5<span>€</span></p>
+          </div>
+
+          <div class="item">
+            <h3>Infusiones</h3>
+            <p class="price">1,5<span>€</span></p>
+          </div>
+
+          <div class="item">
+            <h3>Zumo de Naranja</h3>
+            <p class="price">2,2<span>€</span></p>
+          </div>
+        </div>
+
+        <div class="platos-container" *ngFor="let plato of platosFiltrados">
+          <div class="card {{ plato.clase }}">
+            <div
+              class="left"
+              [ngStyle]="{
+                display: selectedCategory === 'desayunos' ? 'flex' : 'block',
+                width: selectedCategory === 'desayunos' ? '100%' : '47%',
+                justifyContent: selectedCategory === 'desayunos' ? 'space-between' : 'unset',
+              }"
+            >
+              <h3>{{ plato.nombre }}</h3>
+
+              <div
+                class="recomendacion"
+                [ngStyle]="{ display: plato.sugerencia }"
+                style="align-items: center; margin-bottom: 10px"
+              >
+                <p class="recomendacion">Recomendacion del chef</p>
+                <img
+                  src="../../../assets/icons/estrella.png"
+                  style="width: 5%"
+                  alt="Estrella recomendación"
+                />
+              </div>
+              <p>{{ plato.descripcion }}</p>
+
+              <div style="display: flex">
+                <p class="price">
+                  <span>Precio:</span> {{ plato.precio }}<span>€</span>
+                </p>
+
+                <p
+                  class="price"
+                  [ngStyle]="{ display: plato.precio2_visible }"
+                  style="margin-left: 10px"
+                >
+                  <span>Precio:</span> {{ plato.precio2 }}<span>€</span>
+                </p>
+              </div>
+            </div>
+            <div class="right"               
+            [ngStyle]="{
+              display: selectedCategory === 'desayunos' ? 'none' : 'block',
+            }">
+              <img src="{{ plato.img }}" alt="{{ plato.descripcion }}" />
+            </div>
+          </div>
+        </div>
+        <p class="info info2" style="padding: 20px 0">
+          *Los productos consumidos en terraza tienen un suplemento del 10%.
+        </p>
+      </div>
+      <p class="info" style="padding: 70px 0">
+        Todos nuestros panes son artesanos, incluida la masa de las pizzas.
+      </p>
+    </div>
+  </div>
+</section>

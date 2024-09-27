@@ -10,6 +10,7 @@ interface Plato {
   clase: string;
   sugerencia: string;
   precio2_visible: string;
+  nuevo: string;
 }
 
 @Component({
@@ -23,6 +24,9 @@ export class MenuComponent implements AfterViewInit, OnInit {
 
 
   platos: Plato[] = [
+
+    //ENTRANTRES
+
     {
       nombre: 'Ensalada de burrata y tomate confitado, rucula y aceite de albahaca',
       descripcion: 'Una combinación irresistible de burrata cremosa y tomates confitados dulces, realzada con albahaca fresca, aceite de oliva y un toque de reducción balsámica. Perfecta como entrada ligera o acompañamiento sofisticado.',
@@ -33,21 +37,74 @@ export class MenuComponent implements AfterViewInit, OnInit {
       categorias: ['completo', 'entrantes'],
       clase: '',
       sugerencia: 'none',
+      nuevo: '',
     },
 
-    // PLATOS CALIENTES
+    {
+      nombre: 'Provolone al Horno',
+      descripcion: 'Una delicia fundida que te hará derretirte de gusto. El queso provolone, suave y cremoso, sale del horno burbujeante, listo para que lo disfrutes con cada bocado. Perfecto para compartir... o no, depende de tu nivel de antojo. ¡Cuidado, quema, pero vale la pena!',
+      precio: '9,5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'entrantes'],
+      clase: 'reverse',
+      sugerencia: 'none',
+      nuevo: 'true',
+    },
 
     {
-      nombre: 'Croquetas de Jamon Iberico',
+      nombre: 'Croquetas de Temporada 1ud',
       descripcion: 'Cada croqueta ofrece una combinación perfecta de una crujiente capa exterior y un relleno cremoso y sabroso de jamón ibérico, que se deshace en la boca. Un bocado irresistible que ha ganado el corazón de nuestros clientes.',
       precio: '2,3',
       precio2_visible: 'none',
       precio2: '',
       img: '../../../assets/menu/croqueta.png',
-      categorias: ['completo', 'principales'],
+      categorias: ['completo', 'entrantes'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Takoyaki de Pulpo 8ud',
+      descripcion: 'Especialidad japonesa. Estos bocaditos redondos están rellenos de pulpo tierno y sazonados con una mezcla secreta de especias. Rebozados y fritos hasta alcanzar la perfección, se sirven con salsa takoyaki, mayonesa japonesa y un toque de alga nori. Cada bocado es una explosión de sabor y textura que te transportará directamente a Japón.',
+      precio: '9,5',
+      precio2_visible: 'none',
+      precio2: 'reverse',
+      img: '../../../assets/menu/takoyaki.png',
+      categorias: ['completo', 'entrantes'],
       clase: 'reverse',
       sugerencia: 'none',
+      nuevo: '',
     },
+
+    {
+      nombre: 'Patatas con mojo rojo y alioli suave',
+      descripcion: 'Patatas acompañadas de un vibrante mojo rojo, que aporta un toque de especias y sabor, y un alioli suave, que ofrece una cremosidad delicada. Esta combinación de sabores intensos y suaves es el acompañamiento perfecto para cualquier plato o para disfrutar por sí sola.',
+      precio: '7,5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/patatas.png',
+      categorias: ['completo', 'entrantes'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Patatas rancheras con duo de quesos fundidos y bacon',
+      descripcion: 'Las patatas más rebeldes de la carta. Crujientes por fuera, tiernas por dentro, bañadas en una cascada de queso fundido y rematadas con crujientes trocitos de bacon. Una combinación que va directa al corazón... y al estómago. ¡Imposible resistirse!',
+      precio: '8,5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'entrantes'],
+      clase: 'reverse',
+      sugerencia: 'none',
+      nuevo: 'true',
+    },
+
 
     {
       nombre: 'Nachos con salsa de queso cheddar y zorza',
@@ -56,23 +113,11 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio2_visible: 'none',
       precio2: '',
       img: '../../../assets/menu/nachos2.png',
-      categorias: ['completo', 'principales'],
+      categorias: ['completo', 'entrantes'],
       clase: '',
       sugerencia: 'none',
+      nuevo: '',
     },
-
-    {
-      nombre: 'Patatas con mojo rojo y alioli suave',
-      descripcion: 'Patatas acompañadas de un vibrante mojo rojo, que aporta un toque de especias y sabor, y un alioli suave, que ofrece una cremosidad delicada. Esta combinación de sabores intensos y suaves es el acompañamiento perfecto para cualquier plato o para disfrutar por sí sola.',
-      precio: '7',
-      precio2_visible: 'none',
-      precio2: '',
-      img: '../../../assets/menu/patatas.png',
-      categorias: ['completo', 'principales'],
-      clase: 'reverse',
-      sugerencia: 'none',
-    },
-
 
     {
       nombre: 'Torreznos con crema de Revolcona',
@@ -82,9 +127,13 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio2: '',
       img: '../../../assets/menu/torreznos.png',
       categorias: ['completo', 'principales'],
-      clase: '',
+      clase: 'reverse',
       sugerencia: 'none',
+      nuevo: ''
     },
+
+
+    // PLATOS CALIENTES
 
     {
       nombre: 'Alitas Picantonas',
@@ -94,33 +143,63 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio2: '',
       img: '../../../assets/menu/alitas.png',
       categorias: ['completo', 'principales'],
-      clase: 'reverse',
+      clase: '',
       sugerencia: 'none',
+      nuevo: '',
     },
 
     {
-      nombre: 'Alitas Orientales',
+      nombre: 'Alitas Umami',
       descripcion: 'Descubre el sabor exótico de nuestras alitas orientales, marinadas con una mezcla de especias y salsas que evocan auténticos sabores de Asia. Cada alita está glaseada con una salsa agridulce y ligeramente especiada, ofreciendo una experiencia culinaria única y llena de matices. Perfectas para quienes buscan un toque de aventura en cada bocado.',
       precio: '8,5',
       precio2_visible: 'none',
       precio2: '',
       img: '../../../assets/menu/alitas_verdes.png',
       categorias: ['completo', 'principales'],
-      clase: '',
+      clase: 'reverse',
       sugerencia: 'none',
+      nuevo: 'true',
     },
 
     {
-      nombre: 'Takoyaki de Pulpo',
-      descripcion: 'Especialidad japonesa. Estos bocaditos redondos están rellenos de pulpo tierno y sazonados con una mezcla secreta de especias. Rebozados y fritos hasta alcanzar la perfección, se sirven con salsa takoyaki, mayonesa japonesa y un toque de alga nori. Cada bocado es una explosión de sabor y textura que te transportará directamente a Japón.',
-      precio: '8,5',
+      nombre: 'Duo de Quesadillas',
+      descripcion: 'Dos es mejor que uno, ¿no? Estas quesadillas vienen cargadas de sabor, rellenas de queso derretido y los ingredientes más sabrosos. Un bocado crujiente que te transportará directamente a México. Ideales para compartir, aunque no prometemos que quieras hacerlo. ¡Ándale, que se enfrían!',
+      precio: '9',
       precio2_visible: 'none',
       precio2: '',
-      img: '../../../assets/menu/takoyaki.png',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'principales'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: 'true',
+    },
+
+    {
+      nombre: 'Costillas glaseadas en salsa agripicantes ',
+      descripcion: 'Tiernas, jugosas y con ese toque que te hará chuparte los dedos. Estas costillas están bañadas en una irresistible salsa agridulce con un toque picante que hará que quieras más con cada bocado. ¿El resultado? Una explosión de sabores que te dejará sin palabras... ¡y sin servilletas!',
+      precio: '10',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/no-pic.png',
       categorias: ['completo', 'principales'],
       clase: 'reverse',
       sugerencia: 'none',
+      nuevo: 'true',
     },
+
+    {
+      nombre: 'Yakisoba con Pollo Teriyaki',
+      descripcion: 'Un plato que te transportará directo a las calles de Japón. Fideos yakisoba salteados a la perfección, acompañados de jugoso pollo teriyaki y una mezcla de verduras frescas. Este festín de sabores te hará pensar que tienes un chef japonés en la cocina. ¡Un bocado y estarás haciendo un brindis por el buen gusto!',
+      precio: '10',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'principales'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: 'true',
+    },
+
 
     // BURGERS
     
@@ -132,8 +211,74 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio2: 'Triple 10',
       img: '../../../assets/menu/burger.png',
       categorias: ['completo', 'hamburguesas'],
+      clase: 'reverse',
+      sugerencia: 'flex',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Burger del Gato BBQ',
+      descripcion: 'La estrella de la casa. Una jugosa hamburguesa con carne a la parrilla, bañada en una deliciosa salsa BBQ, con el toque especial de “El Gato”. Todo esto acompañado de bacon crujiente, queso fundido y, por supuesto, mucho sabor. ¡Una combinación que te hará ronronear de felicidad!',
+      precio: 'Doble 9,5',
+      precio2_visible: 'block',
+      precio2: 'Triple 11,5',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'hamburguesas'],
       clase: '',
       sugerencia: 'flex',
+      nuevo: 'true',
+    },
+
+    {
+      nombre: 'Burguer Japan Tempuchicken ',
+      descripcion: 'Un viaje directo a Japón en cada mordisco. Pollo crujiente en tempura, acompañado de salsa teriyaki, mayonesa japonesa y un toque fresco de col asiática. Una fusión perfecta entre lo oriental y lo gourmet que te hará sentir en las calles de Tokio. ¡Irresistible!',
+      precio: 'Doble 8,5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'hamburguesas'],
+      clase: 'reverse',
+      sugerencia: 'flex',
+      nuevo: 'true',
+    },
+
+    {
+      nombre: 'Molletes de solomillo de cerdo en salsa de setas con queso raclette',
+      descripcion: 'Una delicia en cada bocado. Jugoso solomillo de cerdo, bañado en una cremosa salsa de setas, coronado con queso raclette fundido, todo ello servido en suaves molletes. El combo perfecto entre lo rústico y lo gourmet, ideal para darte un capricho... o dos. ¡Una explosión de sabor que te hará repetir!',
+      precio: '8,5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'hamburguesas'],
+      clase: '',
+      sugerencia: 'flex',
+      nuevo: 'true',
+    },
+
+    {
+      nombre: 'Mollete de Pulled Pork con Queso Fundido y Mayonesa de Chipotle',
+      descripcion: 'Este mollete es un verdadero festín. Tierna carne de cerdo desmenuzada, cubierta con queso fundido y un toque picante de mayonesa de chipotle. Cada bocado es una fiesta de sabores que te hará bailar de gusto. ¡Prepárate para saborear la felicidad en pan!',
+      precio: '8,4',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'hamburguesas'],
+      clase: 'reverse',
+      sugerencia: 'flex',
+      nuevo: 'true',
+    },
+
+    {
+      nombre: 'Hot Cat',
+      descripcion: '¡El gatito caliente que se atreve a ser diferente! Con una salchicha jugosa escondida en un suave pan, este "gato" está adornado con los toppings más deliciosos y una salsa que hará que te maulles de placer. Es el compañero perfecto para tus días más hambrientos, ¡así que no te quedes sin el tuyo!',
+      precio: '8',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'hamburguesas'],
+      clase: '',
+      sugerencia: 'flex',
+      nuevo: '',
     },
 
     // PIZZAS
@@ -147,6 +292,8 @@ export class MenuComponent implements AfterViewInit, OnInit {
       categorias: ['completo', 'pizzas'],
       clase: 'reverse',
       sugerencia: 'none',
+      nuevo: '',
+
     },
 
     {
@@ -155,10 +302,104 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio: '17',
       precio2_visible: 'none',
       precio2: '',
-      img: '../../../assets/menu/pizza_bbq.png',
+      img: '../../../assets/menu/no-pic.png',
       categorias: ['completo', 'pizzas'],
       clase: '',
       sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Pizza York-Queso',
+      descripcion: 'La pizza que hará que tu corazón lata un poco más rápido. Con una base crujiente, salsa de tomate fresca, abundante queso derretido y deliciosa york que se funde en cada bocado. Esta combinación clásica es un abrazo para tus papilas gustativas. ¡Perfecta para compartir, aunque no se lo digas a nadie!',
+      precio: '17',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'pizzas'],
+      clase: 'reverse',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    //BEBIDAS
+
+    {
+      nombre: 'Coca Cola',
+      descripcion: '',
+      precio: '3,2',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Coca Cola Zero',
+      descripcion: '',
+      precio: '3,2',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Coca Cola Zero Zero',
+      descripcion: '',
+      precio: '3,2',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Doble de Cerveza',
+      descripcion: '',
+      precio: '3,2',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Tercio de Cerveza',
+      descripcion: '',
+      precio: '3,2',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Tinto de Verano',
+      descripcion: '',
+      precio: '3,2',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
     },
 
     // POSTRES
@@ -170,13 +411,12 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio2: '',
       img: '../../../assets/menu/tartaqueso.png',
       categorias: ['completo', 'postres'],
-      clase: 'reverse',
+      clase: '',
       sugerencia: 'none',
+      nuevo: '',
     },
 
     // DESAYUNOS
-
-
 
     {
       nombre: 'Mollete con Tomate y Topping Iberico',
@@ -188,6 +428,7 @@ export class MenuComponent implements AfterViewInit, OnInit {
       categorias: ['desayunos'],
       clase: '',
       sugerencia: 'none',
+      nuevo: '',
     },
 
     {
@@ -200,6 +441,8 @@ export class MenuComponent implements AfterViewInit, OnInit {
       categorias: ['desayunos'],
       clase: '',
       sugerencia: 'none',
+      nuevo: '',
+
     },
 
     {
@@ -212,6 +455,8 @@ export class MenuComponent implements AfterViewInit, OnInit {
       categorias: ['desayunos'],
       clase: '',
       sugerencia: 'none',
+      nuevo: '',
+
     },
 
     {
@@ -224,6 +469,8 @@ export class MenuComponent implements AfterViewInit, OnInit {
       categorias: ['desayunos'],
       clase: '',
       sugerencia: 'none',
+      nuevo: '',
+
     },
 
     {
@@ -236,6 +483,8 @@ export class MenuComponent implements AfterViewInit, OnInit {
       categorias: ['desayunos'],
       clase: '',
       sugerencia: 'none',
+      nuevo: '',
+
     },
 
     {
@@ -248,6 +497,8 @@ export class MenuComponent implements AfterViewInit, OnInit {
       categorias: ['desayunos'],
       clase: '',
       sugerencia: 'none',
+      nuevo: '',
+
     },
 
 
@@ -261,6 +512,8 @@ export class MenuComponent implements AfterViewInit, OnInit {
       categorias: ['desayunos'],
       clase: '',
       sugerencia: 'none',
+      nuevo: '',
+
     },
 
     {
@@ -273,6 +526,8 @@ export class MenuComponent implements AfterViewInit, OnInit {
       categorias: ['desayunos'],
       clase: '',
       sugerencia: 'none',
+      nuevo: '',
+
     },
 
     {
@@ -285,6 +540,8 @@ export class MenuComponent implements AfterViewInit, OnInit {
       categorias: ['desayunos'],
       clase: '',
       sugerencia: 'none',
+      nuevo: '',
+
     },
 
 
@@ -298,6 +555,7 @@ export class MenuComponent implements AfterViewInit, OnInit {
       categorias: ['desayunos'],
       clase: '',
       sugerencia: 'none',
+      nuevo: '',
     },
 
   ];
@@ -327,7 +585,7 @@ filterCategory(categoria: string) {
       completo: 'Carta Completa',
       entrantes: 'Entrantes',
       principales: 'Principales',
-      hamburguesas: 'Burgers',
+      hamburguesas: 'Burgers, Molletes, Perritos',
       pizzas: 'Pizzas',
       postres: 'Postres',
       bebidas: 'Bebidas',

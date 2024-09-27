@@ -50,9 +50,9 @@
             <div
               class="left"
               [ngStyle]="{
-                display: selectedCategory === 'desayunos' ? 'flex' : 'block',
-                width: selectedCategory === 'desayunos' ? '100%' : '47%',
-                justifyContent: selectedCategory === 'desayunos' ? 'space-between' : 'unset',
+                display: selectedCategory === 'desayunos' || selectedCategory === 'bebidas' ? 'flex' : 'block',
+                width: selectedCategory === 'desayunos' || selectedCategory === 'bebidas' ? '100%' : '47%',
+                justifyContent: selectedCategory === 'desayunos' || selectedCategory === 'bebidas' ? 'space-between' : 'unset',
               }"
             >
               <h3>{{ plato.nombre }}</h3>
@@ -87,7 +87,7 @@
             </div>
             <div class="right"               
             [ngStyle]="{
-              display: selectedCategory === 'desayunos' ? 'none' : 'block',
+              display: selectedCategory === 'desayunos' || selectedCategory === 'bebidas' ? 'none' : 'block',
             }">
               <img src="{{ plato.img }}" alt="{{ plato.descripcion }}" />
             </div>

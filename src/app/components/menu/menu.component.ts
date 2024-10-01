@@ -43,7 +43,7 @@ export class MenuComponent implements AfterViewInit, OnInit {
     {
       nombre: 'Provolone al Horno',
       descripcion: 'Una delicia fundida que te hará derretirte de gusto. El queso provolone, suave y cremoso, sale del horno burbujeante, listo para que lo disfrutes con cada bocado. Perfecto para compartir... o no, depende de tu nivel de antojo. ¡Cuidado, quema, pero vale la pena!',
-      precio: '9,5',
+      precio: '9',
       precio2_visible: 'none',
       precio2: '',
       img: '../../../assets/menu/no-pic.png',
@@ -90,19 +90,6 @@ export class MenuComponent implements AfterViewInit, OnInit {
       clase: '',
       sugerencia: 'none',
       nuevo: '',
-    },
-
-    {
-      nombre: 'Patatas rancheras con duo de quesos fundidos y bacon',
-      descripcion: 'Las patatas más rebeldes de la carta. Crujientes por fuera, tiernas por dentro, bañadas en una cascada de queso fundido y rematadas con crujientes trocitos de bacon. Una combinación que va directa al corazón... y al estómago. ¡Imposible resistirse!',
-      precio: '8,5',
-      precio2_visible: 'none',
-      precio2: '',
-      img: '../../../assets/menu/no-pic.png',
-      categorias: ['completo', 'entrantes'],
-      clase: 'reverse',
-      sugerencia: 'none',
-      nuevo: 'true',
     },
 
 
@@ -164,7 +151,7 @@ export class MenuComponent implements AfterViewInit, OnInit {
     {
       nombre: 'Duo de Quesadillas',
       descripcion: 'Dos es mejor que uno, ¿no? Estas quesadillas vienen cargadas de sabor, rellenas de queso derretido y los ingredientes más sabrosos. Un bocado crujiente que te transportará directamente a México. Ideales para compartir, aunque no prometemos que quieras hacerlo. ¡Ándale, que se enfrían!',
-      precio: '9',
+      precio: '7,5',
       precio2_visible: 'none',
       precio2: '',
       img: '../../../assets/menu/no-pic.png',
@@ -190,7 +177,7 @@ export class MenuComponent implements AfterViewInit, OnInit {
     {
       nombre: 'Yakisoba con Pollo Teriyaki',
       descripcion: 'Un plato que te transportará directo a las calles de Japón. Fideos yakisoba salteados a la perfección, acompañados de jugoso pollo teriyaki y una mezcla de verduras frescas. Este festín de sabores te hará pensar que tienes un chef japonés en la cocina. ¡Un bocado y estarás haciendo un brindis por el buen gusto!',
-      precio: '10',
+      precio: '8,20',
       precio2_visible: 'none',
       precio2: '',
       img: '../../../assets/menu/no-pic.png',
@@ -299,7 +286,7 @@ export class MenuComponent implements AfterViewInit, OnInit {
     {
       nombre: 'Pizza Margarita',
       descripcion: 'Una auténtica pizza italiana, la Margarita es la esencia de la cocina napolitana. Su base de masa delgada y crujiente está cubierta con una suave capa de salsa de tomate fresca, enriquecida con hierbas aromáticas como el albahaca. Encima, se funde el queso mozzarella de alta calidad, creando una combinación perfectamente equilibrada de sabores. El toque final de un chorrito de aceite de oliva virgen extra realza los sabores y añade un acabado brillante y delicioso. Ideal para quienes aprecian la simplicidad de los ingredientes frescos y el sabor auténtico de Italia.',
-      precio: '17',
+      precio: '16',
       precio2_visible: 'none',
       precio2: '',
       img: '../../../assets/menu/no-pic.png',
@@ -312,7 +299,7 @@ export class MenuComponent implements AfterViewInit, OnInit {
     {
       nombre: 'Pizza York-Queso',
       descripcion: 'La pizza que hará que tu corazón lata un poco más rápido. Con una base crujiente, salsa de tomate fresca, abundante queso derretido y deliciosa york que se funde en cada bocado. Esta combinación clásica es un abrazo para tus papilas gustativas. ¡Perfecta para compartir, aunque no se lo digas a nadie!',
-      precio: '17',
+      precio: '16,5',
       precio2_visible: 'none',
       precio2: '',
       img: '../../../assets/menu/no-pic.png',
@@ -324,10 +311,12 @@ export class MenuComponent implements AfterViewInit, OnInit {
 
     //BEBIDAS
 
+    //Refrescos
+
     {
       nombre: 'Coca Cola',
       descripcion: '',
-      precio: '3,2',
+      precio: '2,4',
       precio2_visible: 'none',
       precio2: '',
       img: '',
@@ -340,7 +329,7 @@ export class MenuComponent implements AfterViewInit, OnInit {
     {
       nombre: 'Coca Cola Zero',
       descripcion: '',
-      precio: '3,2',
+      precio: '2,4',
       precio2_visible: 'none',
       precio2: '',
       img: '',
@@ -353,7 +342,22 @@ export class MenuComponent implements AfterViewInit, OnInit {
     {
       nombre: 'Coca Cola Zero Zero',
       descripcion: '',
-      precio: '3,2',
+      precio: '2,4',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    //CERVEZAS
+
+    {
+      nombre: 'Doble Estrella Galicia Especial',
+      descripcion: '',
+      precio: '2,6',
       precio2_visible: 'none',
       precio2: '',
       img: '',
@@ -364,9 +368,9 @@ export class MenuComponent implements AfterViewInit, OnInit {
     },
 
     {
-      nombre: 'Doble de Cerveza',
+      nombre: 'Doble Estrella Galicia (0,0% Tostada)',
       descripcion: '',
-      precio: '3,2',
+      precio: '3',
       precio2_visible: 'none',
       precio2: '',
       img: '',
@@ -377,9 +381,114 @@ export class MenuComponent implements AfterViewInit, OnInit {
     },
 
     {
-      nombre: 'Tercio de Cerveza',
+      nombre: 'Tercio de Estrella Galicia Especial',
       descripcion: '',
-      precio: '3,2',
+      precio: '2,7',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Tercio de Estrella Galicia 0,0',
+      descripcion: '',
+      precio: '2,7',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Tercio de Estrella Galicia (Sin Gluten)',
+      descripcion: '',
+      precio: '2,7',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Erdinger Brauhaus Bayern Radler Limon',
+      descripcion: '',
+      precio: '3',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Brewdog Wingman IPA',
+      descripcion: '',
+      precio: '3,10',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Nortada (IPA Portuguesa) Sin Filtrar',
+      descripcion: '',
+      precio: '3',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: '1906',
+      descripcion: '',
+      precio: '3',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: '1906 Red Vintage',
+      descripcion: '',
+      precio: '3,10',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    //Vermut & vinos
+    {
+      nombre: 'Vermouth Forzudo',
+      descripcion: '',
+      precio: '2,5',
       precio2_visible: 'none',
       precio2: '',
       img: '',
@@ -392,7 +501,139 @@ export class MenuComponent implements AfterViewInit, OnInit {
     {
       nombre: 'Tinto de Verano',
       descripcion: '',
-      precio: '3,2',
+      precio: 'x',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Mensaje Roble (Tempranillo) D.O Ribera del Duero',
+      descripcion: '',
+      precio: 'x',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Mensaje Crianza (Tempranillo) D.O Ribera del Duero',
+      descripcion: '',
+      precio: 'x',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'De Boca en Boca Crianza (Tempranillo) D.O Rioja Batiscafo',
+      descripcion: '',
+      precio: 'x',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'De Boca en Boca Crianza (Garnacha) D.O Calatayud',
+      descripcion: '',
+      precio: 'x',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Origium Roble (Garnacha Syrah) D.O Cariñena',
+      descripcion: '',
+      precio: 'x',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: '8.0.1 Edición Limitada (Cabernet, Suavignon, Syrah, Merlot) D.O Cariñena',
+      descripcion: '',
+      precio: 'x',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    //BLANCOS
+
+    {
+      nombre: 'V&R (Verdejo) D.O Rueda',
+      descripcion: '',
+      precio: 'x',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Silfide (Albariño) D.O Rías Baixas',
+      descripcion: '',
+      precio: 'x',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Particular (Chardonay, Moscatel de Alejandría) D.O Cariñena',
+      descripcion: '',
+      precio: 'x',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '',
+      categorias: ['bebidas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Tentazión Frizzante (Suavignon, Verdejo) D.O Castilla y Leon',
+      descripcion: '',
+      precio: 'x',
       precio2_visible: 'none',
       precio2: '',
       img: '',
@@ -406,7 +647,7 @@ export class MenuComponent implements AfterViewInit, OnInit {
     {
       nombre: 'Tarta de queso',
       descripcion: 'Una delicia clásica y cremosa que combina una base de galleta crujiente con un relleno suave y sedoso de queso crema. Esta tarta de queso se hornea a la perfección, logrando un equilibrio ideal entre dulzura y acidez. Se adorna con una suave capa de mermelada de frutos rojos, proporcionando un contraste de sabores que resalta la suavidad de la tarta. Perfecta como el final ideal para cualquier comida, esta tarta es un verdadero placer para los amantes del postre.',
-      precio: '6',
+      precio: '5',
       precio2_visible: 'none',
       precio2: '',
       img: '../../../assets/menu/tartaqueso.png',
@@ -415,6 +656,59 @@ export class MenuComponent implements AfterViewInit, OnInit {
       sugerencia: 'none',
       nuevo: '',
     },
+
+    {
+      nombre: 'Coulant de Chocolate con Helado de Vainilla',
+      descripcion: 'Una combinación perfecta: el crujiente exterior de chocolate oculta un centro fundido que se desborda al primer corte. Acompañado de helado de vainilla, el contraste entre lo caliente y lo frío crea una experiencia irresistible. ¡Un postre para saborear cada bocado',
+      precio: '4,5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'postres'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Coulant de Caramelo con Helado de Vainilla',
+      descripcion: 'Delicado por fuera, con un centro de caramelo fundido que se desborda al abrirlo. Acompañado de helado de vainilla, su combinación de texturas y sabores entre lo cálido y lo frío es pura tentación. ¡Un postre irresistible para los más golosos!',
+      precio: '4,5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'postres'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Coulant de Queso con Helado de Vainilla',
+      descripcion: 'Crujiente por fuera y con un corazón de queso cremoso que se deshace al cortar. Acompañado de helado de vainilla, este postre combina lo salado y lo dulce de manera irresistible, creando una experiencia única en cada bocado. ¡Un capricho para los amantes del queso!',
+      precio: '4,5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'postres'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Helados Ben&Jerrys 100ml',
+      descripcion: 'El sabor legendario de Ben & Jerry’s, ahora en un tamaño perfecto para llevar. Disfruta de tus combinaciones favoritas de helado cremoso, con trozos de galleta, chocolate y caramelo, en un formato más pequeño pero igual de irresistible. ¡Ideal para un capricho individual en cualquier momento!',
+      precio: '4,5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/no-pic.png',
+      categorias: ['completo', 'postres'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
 
     // DESAYUNOS
 

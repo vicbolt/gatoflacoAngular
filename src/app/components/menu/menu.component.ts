@@ -19,7 +19,7 @@ interface Plato {
   styleUrls: ['./menu.component.scss'],
 })
 
-export class MenuComponent implements AfterViewInit, OnInit {
+export class MenuComponent implements OnInit {
   @Output() categoryChanged = new EventEmitter<string>();
 
 
@@ -46,7 +46,7 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio: '9',
       precio2_visible: 'none',
       precio2: '',
-      img: '../../../assets/menu/no-pic.png',
+      img: '../../../assets/menu/provolone.png',
       categorias: ['completo', 'entrantes'],
       clase: 'reverse',
       sugerencia: 'none',
@@ -101,7 +101,7 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio2: '',
       img: '../../../assets/menu/nachos2.png',
       categorias: ['completo', 'entrantes'],
-      clase: '',
+      clase: 'reverse',
       sugerencia: 'none',
       nuevo: '',
     },
@@ -113,8 +113,8 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio2_visible: 'none',
       precio2: '',
       img: '../../../assets/menu/torreznos.png',
-      categorias: ['completo', 'principales'],
-      clase: 'reverse',
+      categorias: ['completo', 'entrantes'],
+      clase: '',
       sugerencia: 'none',
       nuevo: ''
     },
@@ -129,8 +129,8 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio2_visible: 'none',
       precio2: '',
       img: '../../../assets/menu/alitas.png',
-      categorias: ['completo', 'principales'],
-      clase: '',
+      categorias: ['completo', 'entrantes'],
+      clase: 'reverse',
       sugerencia: 'none',
       nuevo: '',
     },
@@ -142,8 +142,8 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio2_visible: 'none',
       precio2: '',
       img: '../../../assets/menu/alitas_verdes.png',
-      categorias: ['completo', 'principales'],
-      clase: 'reverse',
+      categorias: ['completo', 'entrantes'],
+      clase: '',
       sugerencia: 'none',
       nuevo: 'true',
     },
@@ -154,9 +154,9 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio: '7,5',
       precio2_visible: 'none',
       precio2: '',
-      img: '../../../assets/menu/no-pic.png',
-      categorias: ['completo', 'principales'],
-      clase: '',
+      img: '../../../assets/menu/quesadillas.png',
+      categorias: ['completo', 'entrantes'],
+      clase: 'reverse',
       sugerencia: 'none',
       nuevo: 'true',
     },
@@ -167,9 +167,9 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio: '10',
       precio2_visible: 'none',
       precio2: '',
-      img: '../../../assets/menu/no-pic.png',
-      categorias: ['completo', 'principales'],
-      clase: 'reverse',
+      img: '../../../assets/menu/costillas.png',
+      categorias: ['completo', 'entrantes'],
+      clase: '',
       sugerencia: 'none',
       nuevo: 'true',
     },
@@ -180,9 +180,9 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio: '8,20',
       precio2_visible: 'none',
       precio2: '',
-      img: '../../../assets/menu/no-pic.png',
-      categorias: ['completo', 'principales'],
-      clase: '',
+      img: '../../../assets/menu/yakisoba.png',
+      categorias: ['completo', 'entrantes'],
+      clase: 'reverse',
       sugerencia: 'none',
       nuevo: 'true',
     },
@@ -198,7 +198,7 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio2: 'Triple 10',
       img: '../../../assets/menu/burger.png',
       categorias: ['completo', 'hamburguesas'],
-      clase: 'reverse',
+      clase: '',
       sugerencia: 'flex',
       nuevo: '',
     },
@@ -209,9 +209,9 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio: 'Doble 9,5',
       precio2_visible: 'block',
       precio2: 'Triple 11,5',
-      img: '../../../assets/menu/no-pic.png',
+      img: '../../../assets/menu/burgerbbq.png',
       categorias: ['completo', 'hamburguesas'],
-      clase: '',
+      clase: 'reverse',
       sugerencia: 'flex',
       nuevo: 'true',
     },
@@ -222,9 +222,9 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio: 'Doble 8,5',
       precio2_visible: 'none',
       precio2: '',
-      img: '../../../assets/menu/no-pic.png',
+      img: '../../../assets/menu/burgerjapan.png',
       categorias: ['completo', 'hamburguesas'],
-      clase: 'reverse',
+      clase: '',
       sugerencia: 'flex',
       nuevo: 'true',
     },
@@ -235,9 +235,9 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio: '8,5',
       precio2_visible: 'none',
       precio2: '',
-      img: '../../../assets/menu/no-pic.png',
+      img: '../../../assets/menu/molletesolomillo.png',
       categorias: ['completo', 'hamburguesas'],
-      clase: '',
+      clase: 'reverse',
       sugerencia: 'flex',
       nuevo: 'true',
     },
@@ -248,9 +248,9 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio: '8,4',
       precio2_visible: 'none',
       precio2: '',
-      img: '../../../assets/menu/no-pic.png',
+      img: '../../../assets/menu/molletepulled.png',
       categorias: ['completo', 'hamburguesas'],
-      clase: 'reverse',
+      clase: '',
       sugerencia: 'flex',
       nuevo: 'true',
     },
@@ -261,35 +261,21 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio: '8',
       precio2_visible: 'none',
       precio2: '',
-      img: '../../../assets/menu/no-pic.png',
+      img: '../../../assets/menu/hotcat.png',
       categorias: ['completo', 'hamburguesas'],
-      clase: '',
+      clase: 'reverse',
       sugerencia: 'flex',
       nuevo: '',
     },
 
     // PIZZAS
     {
-      nombre: 'Pizza BBQ',
-      descripcion: 'Bacon, picada de vaca madurada, cebolla crujiente, salsa BBQ y masa de pizza artesana. <br>Saboréate con nuestra pizza barbacoa, una mezcla irresistible de sabores intensos y deliciosos. Con una base de salsa barbacoa ahumada, cubierta con suculentas piezas de carne, cebolla caramelizada y queso fundido, esta pizza ofrece un equilibrio perfecto entre lo dulce y lo salado. Termina con un toque de cilantro fresco para una experiencia de sabor que te hará querer más.',
-      precio: '17',
-      precio2_visible: 'none',
-      precio2: '',
-      img: '../../../assets/menu/pizza_bbq.png',
-      categorias: ['completo', 'pizzas'],
-      clase: 'reverse',
-      sugerencia: 'none',
-      nuevo: '',
-
-    },
-
-    {
       nombre: 'Pizza Margarita',
       descripcion: 'Una auténtica pizza italiana, la Margarita es la esencia de la cocina napolitana. Su base de masa delgada y crujiente está cubierta con una suave capa de salsa de tomate fresca, enriquecida con hierbas aromáticas como el albahaca. Encima, se funde el queso mozzarella de alta calidad, creando una combinación perfectamente equilibrada de sabores. El toque final de un chorrito de aceite de oliva virgen extra realza los sabores y añade un acabado brillante y delicioso. Ideal para quienes aprecian la simplicidad de los ingredientes frescos y el sabor auténtico de Italia.',
       precio: '16',
       precio2_visible: 'none',
       precio2: '',
-      img: '../../../assets/menu/no-pic.png',
+      img: '../../../assets/menu/pizzamarga.png',
       categorias: ['completo', 'pizzas'],
       clase: '',
       sugerencia: 'none',
@@ -302,8 +288,87 @@ export class MenuComponent implements AfterViewInit, OnInit {
       precio: '16,5',
       precio2_visible: 'none',
       precio2: '',
-      img: '../../../assets/menu/no-pic.png',
+      img: '../../../assets/menu/pizzayorkqueso.png',
       categorias: ['completo', 'pizzas'],
+      clase: 'reverse',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Pizza BBQ',
+      descripcion: 'Bacon, picada de vaca madurada, cebolla crujiente, salsa BBQ y masa de pizza artesana. <br>Saboréate con nuestra pizza barbacoa, una mezcla irresistible de sabores intensos y deliciosos. Con una base de salsa barbacoa ahumada, cubierta con suculentas piezas de carne, cebolla caramelizada y queso fundido, esta pizza ofrece un equilibrio perfecto entre lo dulce y lo salado. Termina con un toque de cilantro fresco para una experiencia de sabor que te hará querer más.',
+      precio: '17',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/pizzabbq.png',
+      categorias: ['completo', 'pizzas'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    // POSTRES
+    {
+      nombre: 'Tarta de queso',
+      descripcion: 'Una delicia clásica y cremosa que combina una base de galleta crujiente con un relleno suave y sedoso de queso crema. Esta tarta de queso se hornea a la perfección, logrando un equilibrio ideal entre dulzura y acidez. Se adorna con una suave capa de mermelada de frutos rojos, proporcionando un contraste de sabores que resalta la suavidad de la tarta. Perfecta como el final ideal para cualquier comida, esta tarta es un verdadero placer para los amantes del postre.',
+      precio: '5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/tartaqueso.png',
+      categorias: ['completo', 'postres'],
+      clase: 'reverse',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Coulant de Chocolate con Helado de Vainilla',
+      descripcion: 'Una combinación perfecta: el crujiente exterior de chocolate oculta un centro fundido que se desborda al primer corte. Acompañado de helado de vainilla, el contraste entre lo caliente y lo frío crea una experiencia irresistible. ¡Un postre para saborear cada bocado',
+      precio: '4,5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/coulantchoco.png',
+      categorias: ['completo', 'postres'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Coulant de Caramelo con Helado de Vainilla',
+      descripcion: 'Delicado por fuera, con un centro de caramelo fundido que se desborda al abrirlo. Acompañado de helado de vainilla, su combinación de texturas y sabores entre lo cálido y lo frío es pura tentación. ¡Un postre irresistible para los más golosos!',
+      precio: '4,5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/coulantcara.png',
+      categorias: ['completo', 'postres'],
+      clase: 'reverse',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Coulant de Queso con Helado de Vainilla',
+      descripcion: 'Crujiente por fuera y con un corazón de queso cremoso que se deshace al cortar. Acompañado de helado de vainilla, este postre combina lo salado y lo dulce de manera irresistible, creando una experiencia única en cada bocado. ¡Un capricho para los amantes del queso!',
+      precio: '4,5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/coulantqueso.png',
+      categorias: ['completo', 'postres'],
+      clase: '',
+      sugerencia: 'none',
+      nuevo: '',
+    },
+
+    {
+      nombre: 'Helados Ben&Jerrys 100ml',
+      descripcion: 'El sabor legendario de Ben & Jerry’s, ahora en un tamaño perfecto para llevar. Disfruta de tus combinaciones favoritas de helado cremoso, con trozos de galleta, chocolate y caramelo, en un formato más pequeño pero igual de irresistible. ¡Ideal para un capricho individual en cualquier momento!',
+      precio: '4,5',
+      precio2_visible: 'none',
+      precio2: '',
+      img: '../../../assets/menu/helados.png',
+      categorias: ['completo', 'postres'],
       clase: 'reverse',
       sugerencia: 'none',
       nuevo: '',
@@ -643,72 +708,6 @@ export class MenuComponent implements AfterViewInit, OnInit {
       nuevo: '',
     },
 
-    // POSTRES
-    {
-      nombre: 'Tarta de queso',
-      descripcion: 'Una delicia clásica y cremosa que combina una base de galleta crujiente con un relleno suave y sedoso de queso crema. Esta tarta de queso se hornea a la perfección, logrando un equilibrio ideal entre dulzura y acidez. Se adorna con una suave capa de mermelada de frutos rojos, proporcionando un contraste de sabores que resalta la suavidad de la tarta. Perfecta como el final ideal para cualquier comida, esta tarta es un verdadero placer para los amantes del postre.',
-      precio: '5',
-      precio2_visible: 'none',
-      precio2: '',
-      img: '../../../assets/menu/tartaqueso.png',
-      categorias: ['completo', 'postres'],
-      clase: '',
-      sugerencia: 'none',
-      nuevo: '',
-    },
-
-    {
-      nombre: 'Coulant de Chocolate con Helado de Vainilla',
-      descripcion: 'Una combinación perfecta: el crujiente exterior de chocolate oculta un centro fundido que se desborda al primer corte. Acompañado de helado de vainilla, el contraste entre lo caliente y lo frío crea una experiencia irresistible. ¡Un postre para saborear cada bocado',
-      precio: '4,5',
-      precio2_visible: 'none',
-      precio2: '',
-      img: '../../../assets/menu/no-pic.png',
-      categorias: ['completo', 'postres'],
-      clase: '',
-      sugerencia: 'none',
-      nuevo: '',
-    },
-
-    {
-      nombre: 'Coulant de Caramelo con Helado de Vainilla',
-      descripcion: 'Delicado por fuera, con un centro de caramelo fundido que se desborda al abrirlo. Acompañado de helado de vainilla, su combinación de texturas y sabores entre lo cálido y lo frío es pura tentación. ¡Un postre irresistible para los más golosos!',
-      precio: '4,5',
-      precio2_visible: 'none',
-      precio2: '',
-      img: '../../../assets/menu/no-pic.png',
-      categorias: ['completo', 'postres'],
-      clase: '',
-      sugerencia: 'none',
-      nuevo: '',
-    },
-
-    {
-      nombre: 'Coulant de Queso con Helado de Vainilla',
-      descripcion: 'Crujiente por fuera y con un corazón de queso cremoso que se deshace al cortar. Acompañado de helado de vainilla, este postre combina lo salado y lo dulce de manera irresistible, creando una experiencia única en cada bocado. ¡Un capricho para los amantes del queso!',
-      precio: '4,5',
-      precio2_visible: 'none',
-      precio2: '',
-      img: '../../../assets/menu/no-pic.png',
-      categorias: ['completo', 'postres'],
-      clase: '',
-      sugerencia: 'none',
-      nuevo: '',
-    },
-
-    {
-      nombre: 'Helados Ben&Jerrys 100ml',
-      descripcion: 'El sabor legendario de Ben & Jerry’s, ahora en un tamaño perfecto para llevar. Disfruta de tus combinaciones favoritas de helado cremoso, con trozos de galleta, chocolate y caramelo, en un formato más pequeño pero igual de irresistible. ¡Ideal para un capricho individual en cualquier momento!',
-      precio: '4,5',
-      precio2_visible: 'none',
-      precio2: '',
-      img: '../../../assets/menu/no-pic.png',
-      categorias: ['completo', 'postres'],
-      clase: '',
-      sugerencia: 'none',
-      nuevo: '',
-    },
-
 
     // DESAYUNOS
 
@@ -886,31 +885,5 @@ filterCategory(categoria: string) {
     };
 
     this.pageTitle = titles[categoria] || 'Carta';
-  }
-
-
-  constructor(private el: ElementRef) {}
-
-  ngAfterViewInit(): void {
-    const cards = this.el.nativeElement.querySelectorAll('.card');
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
-          } else {
-            entry.target.classList.remove('in-view');
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-      }
-    );
-
-    cards.forEach((box: Element) => {
-      observer.observe(box);
-    });
   }
 }

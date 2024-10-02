@@ -8,7 +8,6 @@
           >Desayunos</button>
           <button class="btn-category" (click)="filterCategory('completo')" [ngClass]="{'active': selectedCategory === 'completo'}" >Carta</button>
           <button class="btn-category" (click)="filterCategory('entrantes')" [ngClass]="{'active': selectedCategory === 'entrantes'}">Entrantes</button>
-          <button class="btn-category" (click)="filterCategory('principales')" [ngClass]="{'active': selectedCategory === 'principales'}">Principales</button>
           <button class="btn-category" (click)="filterCategory('hamburguesas')" [ngClass]="{'active': selectedCategory === 'hamburguesas'}">Burgers</button>
           <button class="btn-category" (click)="filterCategory('pizzas')" [ngClass]="{'active': selectedCategory === 'pizzas'}">Pizzas</button>
           <button class="btn-category" (click)="filterCategory('postres')" [ngClass]="{'active': selectedCategory === 'postres'}">Postres</button>
@@ -46,7 +45,7 @@
         </div>
 
         <div class="platos-container" *ngFor="let plato of platosFiltrados">
-          <div class="card {{ plato.clase }}">
+          <div class="card fade-in {{ plato.clase }}">
             <div
               class="left"
               [ngStyle]="{

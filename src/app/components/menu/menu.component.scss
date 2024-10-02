@@ -73,6 +73,7 @@
 
       .platos-container {
         width: 100%;
+
       }
 
       .category-buttons {
@@ -170,6 +171,7 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 35px;
+      
 
       @media (max-width: 950px) {
         flex-direction: column-reverse;

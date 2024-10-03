@@ -17,6 +17,7 @@ import { CartaComponent } from './pages/carta/carta.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { RestauranteComponent } from './pages/restaurante/restaurante.component';
+import { VideoComponent } from './components/video/video.component';
 
 
 
@@ -36,6 +37,7 @@ import { RestauranteComponent } from './pages/restaurante/restaurante.component'
     AboutComponent,
     ContactComponent,
     RestauranteComponent,
+    VideoComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 [build]
-  publish = "dist/gato_flaco_angular/browser" # Cambia esto si tu directorio de publicación es diferente
+  publish = "dist/gato_flaco_angular/browser"
   command = "npm run build"
 
 [[redirects]]

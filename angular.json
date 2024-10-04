@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/gato_flaco_angular/browser",
+            "outputPath": "dist/gato_flaco_angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

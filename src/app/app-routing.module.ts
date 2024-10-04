@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'restaurante', component: RestauranteComponent },
 
   // Otras rutas
-  { path: '**', redirectTo: '', pathMatch: 'full'  }
+  { path: '**', redirectTo: '/home', pathMatch: 'full'  }
 ];
 
 @NgModule({

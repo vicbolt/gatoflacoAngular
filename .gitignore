@@ -2,6 +2,7 @@
 
 # Compiled output
 /dist
+!/dist/gato_flaco_taberna/browser/_redirects
 /tmp
 /out-tsc
 /bazel-out

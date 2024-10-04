@@ -17,14 +17,12 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'restaurante', component: RestauranteComponent },
 
-
-
   // Otras rutas
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '', pathMatch: 'full'  }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: false })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -12,6 +12,7 @@ import { RestauranteComponent } from './pages/restaurante/restaurante.component'
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'carta', component: CartaComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },

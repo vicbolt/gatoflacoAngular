@@ -1,0 +1,9 @@
+[build]
+  publish = "dist/gato_flaco_angular/browser" # Cambia esto si tu directorio de publicación es diferente
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true

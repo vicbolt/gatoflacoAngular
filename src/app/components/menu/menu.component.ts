@@ -193,7 +193,7 @@ export class MenuComponent implements OnInit {
     {
       nombre: 'Burger del Gato',
       descripcion: 'Disfruta de nuestra hamburguesa doble o triple, una auténtica delicia para los amantes de la buena carne. Con dos jugosas hamburguesas de carne, una generosa capa de queso fundido y nuestra salsa especial secreta, cada bocado es una explosión de sabor. Acompañada de ingredientes frescos y pan recién horneado, esta hamburguesa es el equilibrio perfecto entre indulgencia y satisfacción.',
-      precio: 'Doble 8,5',
+      precio: ' Doble 8,5',
       precio2_visible: 'block',
       precio2: 'Triple 10',
       img: '../../../assets/menu/min/burger-min.png',

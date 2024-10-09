@@ -29,7 +29,7 @@ export class MenuComponent implements OnInit {
 
     {
       nombre: 'Ensalada de burrata y tomate confitado, rucula y aceite de albahaca',
-      descripcion: 'Una combinación irresistible de burrata cremosa y tomates confitados dulces, realzada con albahaca fresca, aceite de oliva y un toque de reducción balsámica. Perfecta como entrada ligera o acompañamiento sofisticado.',
+      descripcion: 'Una combinación irresistible de burrata cremosa, tomates confitados dulces y rúcula fresca realzada con aceite de  albahaca. Perfecta como entrada ligera o acompañamiento sofisticado.',
       precio: '9,5',
       precio2_visible: 'none',
       precio2: '',
@@ -68,7 +68,7 @@ export class MenuComponent implements OnInit {
 
     {
       nombre: 'Takoyaki de Pulpo 8ud',
-      descripcion: 'Especialidad japonesa. Estos bocaditos redondos están rellenos de pulpo tierno y sazonados con una mezcla secreta de especias. Rebozados y fritos hasta alcanzar la perfección, se sirven con salsa takoyaki, mayonesa japonesa y un toque de alga nori. Cada bocado es una explosión de sabor y textura que te transportará directamente a Japón.',
+      descripcion: 'Especialidad japonesa. Estos bocaditos redondos están rellenos de pulpo tierno y sazonados con una mezcla secreta de especias. Rebozados y fritos hasta alcanzar la perfección, se sirven con salsa takoyaki, mayonesa japonesa y un toque de katsoubushi. Cada bocado es una explosión de sabor y textura que te transportará directamente a Japón.',
       precio: '9,5',
       precio2_visible: 'none',
       precio2: 'reverse',
@@ -205,7 +205,7 @@ export class MenuComponent implements OnInit {
 
     {
       nombre: 'Burger del Gato BBQ',
-      descripcion: 'La estrella de la casa. Una jugosa hamburguesa con carne a la parrilla, bañada en una deliciosa salsa BBQ, con el toque especial de “El Gato”. Todo esto acompañado de bacon crujiente, queso fundido y, por supuesto, mucho sabor. ¡Una combinación que te hará ronronear de felicidad!',
+      descripcion: 'La estrella de la casa. Una jugosa hamburguesa de carne pulled pork y queso bañada en una deliciosa salsa burger. ¡Una combinación que te hará ronronear de felicidad!',
       precio: 'Doble 9,5',
       precio2_visible: 'block',
       precio2: 'Triple 11,5',
@@ -218,7 +218,7 @@ export class MenuComponent implements OnInit {
 
     {
       nombre: 'Burguer Japan Tempuchicken ',
-      descripcion: 'Un viaje directo a Japón en cada mordisco. Pollo crujiente en tempura, acompañado de salsa teriyaki, mayonesa japonesa y un toque fresco de col asiática. Una fusión perfecta entre lo oriental y lo gourmet que te hará sentir en las calles de Tokio. ¡Irresistible!',
+      descripcion: 'Un viaje directo a Japón en cada mordisco. Pollo crujiente en tempura, acompañado de salsa japonesa y queso fundido. Una fusión perfecta entre lo oriental y lo gourmet que te hará sentir en las calles de Tokio. ¡Irresistible!',
       precio: 'Doble 8,5',
       precio2_visible: 'none',
       precio2: '',

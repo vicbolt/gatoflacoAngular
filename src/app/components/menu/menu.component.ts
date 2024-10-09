@@ -144,7 +144,7 @@ export class MenuComponent implements OnInit {
       img: '../../../assets/menu/min/alitas_verdes-min.png',
       categorias: ['completo', 'entrantes'],
       clase: '',
-      sugerencia: 'none',
+      sugerencia: 'flex',
       nuevo: 'true',
     },
 
@@ -251,7 +251,7 @@ export class MenuComponent implements OnInit {
       img: '../../../assets/menu/min/molletepulled-min.png',
       categorias: ['completo', 'hamburguesas'],
       clase: '',
-      sugerencia: 'flex',
+      sugerencia: 'none',
       nuevo: 'true',
     },
 
@@ -264,7 +264,7 @@ export class MenuComponent implements OnInit {
       img: '../../../assets/menu/min/hotcat-min.png',
       categorias: ['completo', 'hamburguesas'],
       clase: 'reverse',
-      sugerencia: 'flex',
+      sugerencia: 'none',
       nuevo: '',
     },
 
@@ -304,7 +304,7 @@ export class MenuComponent implements OnInit {
       img: '../../../assets/menu/min/pizzabbq-min.png',
       categorias: ['completo', 'pizzas'],
       clase: '',
-      sugerencia: 'none',
+      sugerencia: 'flex',
       nuevo: '',
     },
 

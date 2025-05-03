@@ -45,12 +45,12 @@
         </div>
 
         <div class="platos-container" *ngFor="let plato of platosFiltrados">
-          <div class="card fade-in {{ plato.clase }}">
+          <div class="card fade-in {{ plato.clase }}" >
             <div
               class="left"
               [ngStyle]="{
                 display: selectedCategory === 'desayunos' || selectedCategory === 'bebidas' ? 'flex' : 'block',
-                width: selectedCategory === 'desayunos' || selectedCategory === 'bebidas' ? '100%' : '47%',
+                width: !plato.img || selectedCategory === 'desayunos' || selectedCategory === 'bebidas' ? '100%' : '47%',
                 justifyContent: selectedCategory === 'desayunos' || selectedCategory === 'bebidas' ? 'space-between' : 'unset',
               }"
             >
@@ -86,9 +86,9 @@
             </div>
             <div class="right"               
             [ngStyle]="{
-              display: selectedCategory === 'desayunos' || selectedCategory === 'bebidas' ? 'none' : 'block',
+              display: !plato.img ||selectedCategory === 'desayunos' || selectedCategory === 'bebidas' ? 'none' : 'block',
             }">
-              <img src="{{ plato.img }}" alt="{{ plato.descripcion }}" />
+              <img *ngIf="plato.img" src="{{ plato.img }}" alt="Imagen" />
             </div>
           </div>
         </div>
